@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-merriweather bg-[url(./images/hero-section.jpg)] bg-fixed bg-center bg-no-repeat bg-cover">
+     
+         <!-- navbar start -->
+         <nav class="relative p-5 border-b-4 border-gray-800">
+          <div class="absolute inset-0 bg-gray-900 opacity-60 z-0"></div>
+          <div
+            class="container mx-auto flex items-center justify-between relative z-10"
+          >
+            <!-- Left side: Logo and Navigation Items -->
+            <div class="flex items-center w-full">
+              <!-- Logo -->
+              <div>
+                <a href="#"
+                  ><img src="./images/logo.svg" alt="Logo" class="h-12 w-auto"
+                /></a>
+              </div>
+    
+              <!-- Navigation Items (hidden on small screens) -->
+              <div class="hidden md:flex flex-grow space-x-5 ml-14">
+                <a
+                  href="index.html"
+                  class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+                  >Home</a
+                >
+                <a
+                  href="index.html#Features"
+                  class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+                  >Features</a
+                >
+                <a
+                  href="index.html#Planes"
+                  class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+                  >Planes</a
+                >
+                <a
+                  href="index.html#Missions"
+                  class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+                  >Missions</a
+                >
+                <a
+                  href="index.html#Enemy"
+                  class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+                  >Enemy</a
+                >
+                <a
+                  href="index.html#Gallery"
+                  class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+                  >Gallery</a
+                >
+              </div>
+            </div>
+    
+            <!-- Right side: Download Button (visible on medium screens and larger) -->
+            <a
+          href="#"
+          class="hidden md:flex items-center border-4 border-white hover:bg-hover-button text-white font-bold py-3 px-8 rounded-lg hover:border-hover-button-border hover:border-4 text-base"
+        >
+          Download
+          <img
+            src="./images/icons-download.png"
+            alt="Download Icon"
+            class="ml-2 h-5 w-5"
+          />
+        </a>
+
+    
+            <!-- Mobile Menu Toggle (visible on small screens) -->
+            <button
+              id="menu-toggle"
+              class="md:hidden flex items-center text-white hover:text-gray-400"
+            >
+              <svg
+                id="menu-icon"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              <svg
+                id="close-icon"
+                class="w-6 h-6 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+    
+          <!-- Mobile Menu (hidden by default) -->
+          <div
+            id="mobile-menu"
+            class="fixed top-0 left-0 w-full bg-opacity-70 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden h-full z-50 flex flex-col"
+          >
+            <div class="flex items-center justify-between p-5">
+              <div class=" ">
+                <a href="#">
+                  <a href="#"
+                    ><img
+                      src="./images/logo.svg"
+                      alt="Logo"
+                      class="h-12 w-auto" /></a
+                ></a>
+              </div>
+              <button id="close-menu" class="text-white hover:text-gray-400">
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="flex flex-col pt-16 items-center flex-grow space-y-6 px-5">
+              <a
+                href="index.html"
+                class="block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+                >Home</a
+              >
+              <a
+                href="index.html#Features"
+                class="block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+                >Features</a
+              >
+              <a
+                href="index.html#Planes"
+                class="block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+                >Planes</a
+              >
+              <a
+                href="index.html#Missions"
+                class="block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+                >Missions</a
+              >
+              <a
+                href="index.html#Enemy"
+                class="block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+                >Enemy</a
+              >
+              <a
+                href="index.html#Gallery"
+                class="block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+                >Gallery</a
+              >
+              <a
+                href="#"
+                class="block text-center border-4 border-white hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+              >
+                Download
+                <img
+                  src="./images/icons-download.png"
+                  alt="Download Icon"
+                  class="ml-2 h-4 w-4 inline"
+                />
+              </a>
+            </div>
+          </div>
+        </nav>
+    <!-- navbar end -->
+
+   
+    <div class="  ">
+
+    <div class="md:max-w-[1200px] lg:max-w-[1400px] mx-auto text-white px-4 py-4">
+      <div class="flex flex-col items-center text-center  py-8">
+        <h2 class="md:text-5xl text-3xl font-bold  mb-4"> Credit Goes To</h2>
+        <p class="md:text-lg text-sm   md:max-w-[900px] ">
+          I wanted to extend my heartfelt thanks for providing the assets for
+          our game project. Your support has been invaluable, and the quality of
+          the assets will greatly enhance our game's development. We truly
+          appreciate your generosity and are excited to integrate these
+          resources into our work. Thank you for your partnership and for
+          helping us bring our vision to life!
+        </p>
+      </div>
+
+      <div class="flex flex-col   py-8 border-2 border-white mb-8">
+        <h2 class="md:text-5xl text-3xl font-bold mb-4 text-center py-4">  AssetForge Studios</h2>
+         
+        <div class="flex flex-col justify-between mx-10  md:flex-row ">
+          <ul class="space-y-4 md:text-xl text-md list-disc text-start">
+            <li>TrackLight</li>
+            <li>TimeTrialClock</li>
+            <li>SafetyRail</li>
+            <li>RaceTrackCurvature</li>
+            <li>HurdleRamp</li>
+            <li>CheckpointArch</li>
+            <li>TrackDivider</li>
+            <li>PowerUpIcon</li>
+            <li>LapCounter</li>
+            <li>SpectatorStands</li>
+            <li>RaceStartGrid</li>
+            <li>BrakeZoneSign</li>
+            <li>TurboBoostIcon</li>
+            <li>TrackSurfaceTexture</li>
+            <li>SpeedometerHUD</li>
+          </ul>
+          <ul class="space-y-4 md:text-xl text-md list-disc text-start">
+            <li>SpeedBoostPad</li>
+              <li>CheckPointFlag</li>
+              <li>FinishLineBanner</li>
+              <li>TrackBarrier</li>
+              <li>TurnArrowSign</li>
+              <li>PitStopArea</li>
+              <li>SpeedTrap</li>
+              <li>ObstacleCone</li>
+              <li>RaceCar</li>
+              <li>CarUpgradeKit</li>
+              <li>TrackLight</li>
+              <li>TimeTrialClock</li>
+              <li>SafetyRail</li>
+              <li>RaceTrackCurvature</li>
+              <li>SpeedometerHUD</li>
+          </ul>
+          <ul class="space-y-4 md:text-xl text-md list-disc text-start">
+            <li>TrackLight</li>
+            <li>TimeTrialClock</li>
+            <li>SafetyRail</li>
+            <li>RaceTrackCurvature</li>
+            <li>HurdleRamp</li>
+            <li>CheckpointArch</li>
+            <li>TrackDivider</li>
+            <li>PowerUpIcon</li>
+            <li>LapCounter</li>
+            <li>SpectatorStands</li>
+            <li>RaceStartGrid</li>
+            <li>BrakeZoneSign</li>
+            <li>TurboBoostIcon</li>
+            <li>TrackSurfaceTexture</li>
+            <li>SpeedometerHUD</li>
+          </ul>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+
+   <!-- Footer Section Start -->
+   <footer class="w-full bg-gray-900">
+    <div
+      class="mx-auto md:max-w-[1200px] lg:max-w-[1400px] px-4 sm:px-6 lg:px-8"
+    >
+      <!--Grid-->
+      <div
+        class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full"
+      >
+        <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
+          <a
+            href="https://pagedone.io/"
+            class="flex justify-center lg:justify-start"
+          >
+            <img src="./images/logo.svg" alt="" class="w-28" />
+          </a>
+          <p
+            class="py-8 text-sm text-gray-200 lg:max-w-xs text-center lg:text-left max-w-[600px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+            odit laudantium doloremque reiciendis commodi natus a ducimus quas
+            voluptates quae.
+          </p>
+        </div>
+        <!--End Col-->
+        <div class="lg:mx-auto text-left">
+          <h4 class="text-lg text-white font-medium mb-7">Support</h4>
+          <ul class="text-sm transition-all duration-500">
+            <li class="mb-3">
+              <a
+                href="index.html"
+                class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                >Home</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                href="index.html#Features"
+                class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                >Features</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                href="index.html#Planes"
+                class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                >Planes</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                href="index.html#Missions"
+                class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                >Missions</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                href="index.html#Enemy"
+                class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                >Enemy</a
+              >
+            </li>
+            <li class="mb-3">
+              <a
+                href="index.html#Gallery"
+                class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                >Gallery</a
+              >
+              <li class="mb-3">
+                <a
+                  href="./assets.html"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Assets</a
+                >
+              </li>
+            </li>
+          </ul>
+        </div>
+        <!--End Col-->
+        <div class="lg:mx-auto text-left">
+          <h4 class="text-lg text-white font-medium mb-7">Subscribe</h4>
+          <div
+            class="flex mt-4 md:space-x-4 space-x-2 sm:justify-center lg:mt-0"
+          >
+            <a
+              href="javascript:;"
+              class="w-9 h-9 rounded-full bg-[#5B51D8] flex justify-center items-center hover:bg-button"
+            >
+              <img
+                src="./images/social icon/icons8-facebook-f.svg"
+                alt=""
+                class="w-6 h-6"
+              />
+            </a>
+            <a
+              href="javascript:;"
+              class="w-9 h-9 rounded-full bg-[#E1306C] flex justify-center items-center hover:bg-button"
+            >
+              <img
+                src="./images/social icon/icons8-instagram-100.png"
+                alt=""
+                class="w-6 h-6"
+              />
+            </a>
+         
+            <a
+              href="javascript:;"
+              class="w-9 h-9 rounded-full bg-[#FD1D1D] flex justify-center items-center hover:bg-button"
+            >
+              <img
+                src="./images/social icon/icons8-youtube-100.png"
+                alt=""
+                class="w-6 h-6"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--Grid-->
+      <div class="py-7 border-t border-gray-200">
+        <div
+          class="flex items-center justify-center flex-col lg:justify-center lg:flex-row"
+        >
+          <span class="text-sm text-gray-200"
+            >©<a href="">Muhammad Waqas</a> 2024, All rights reserved.</span
+          >
+        </div>
+      </div>
+    </div>
+  </footer> 
+  <!-- Footer Secton End -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/custom.js"></script>
+  </body>
+</html>

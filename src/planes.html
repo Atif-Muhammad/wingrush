@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-merriweather bg-[url(./images/hero-section.jpg)] bg-fixed bg-center bg-no-repeat bg-cover">
+   
+         <!-- navbar start -->
+         <nav class="relative p-5 border-b-4 border-gray-800">
+          <div class="absolute inset-0 bg-gray-900 opacity-60 z-0"></div>
+          <div
+            class="container mx-auto flex items-center justify-between relative z-10"
+          >
+            <!-- Left side: Logo and Navigation Items -->
+            <div class="flex items-center w-full">
+              <!-- Logo -->
+              <div>
+                <a href="#"
+                  ><img src="./images/logo.svg" alt="Logo" class="h-12 w-auto"
+                /></a>
+              </div>
+    
+              <!-- Navigation Items (hidden on small screens) -->
+              <div class="hidden md:flex flex-grow space-x-5 ml-14">
+                <a
+                  href="index.html"
+                  class="text-white hover:text-red-600 hover:border-b-2 hover:border-red-900"
+                  >Home</a
+                >
+                <a
+                  href="index.html#Features"
+                  class="text-white hover:text-red-600 hover:border-b-2 hover:border-red-900"
+                  >Features</a
+                >
+                <a
+                  href="index.html#Planes"
+                  class="text-white hover:text-red-600 hover:border-b-2 hover:border-red-900"
+                  >Planes</a
+                >
+                <a
+                  href="index.html#Missions"
+                  class="text-white hover:text-red-600 hover:border-b-2 hover:border-red-900"
+                  >Missions</a
+                >
+                <a
+                  href="index.html#Enemy"
+                  class="text-white hover:text-red-600 hover:border-b-2 hover:border-red-900"
+                  >Enemy</a
+                >
+                <a
+                  href="index.html#Gallery"
+                  class="text-white hover:text-red-600 hover:border-b-2 hover:border-red-900"
+                  >Gallery</a
+                >
+              </div>
+            </div>
+    
+            <!-- Right side: Download Button (visible on medium screens and larger) -->
+            <a
+              href="#"
+              class="hidden md:flex items-center border-2 text-white px-8 py-2 rounded-lg hover:bg-red-600 hover:border-4 hover:border-red-900  hover:text-white"
+            >
+              Download
+              <img
+                src="./images/icons-download.png"
+                alt="Download Icon"
+                class="ml-2 h-4 w-4"
+              />
+            </a>
+    
+            <!-- Mobile Menu Toggle (visible on small screens) -->
+            <button
+              id="menu-toggle"
+              class="md:hidden flex items-center text-white hover:text-gray-400"
+            >
+              <svg
+                id="menu-icon"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              <svg
+                id="close-icon"
+                class="w-6 h-6 hidden"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+    
+          <!-- Mobile Menu (hidden by default) -->
+          <div
+          id="mobile-menu"
+          class="fixed top-0 left-0 w-full bg-opacity-70 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden h-full z-50 flex flex-col"
+        >
+          <div class="flex items-center justify-between p-5">
+            <div>
+              <a href="#">
+                <img src="./images/logo.svg" alt="Logo" class="h-12 w-auto" />
+              </a>
+            </div>
+            <button id="close-menu" class="text-white hover:text-gray-400">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-col pt-16 items-center flex-grow space-y-6 px-5">
+            <a
+              href="index.html"
+              class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+              >Home</a
+            >
+            <a
+              href="index.html#Features"
+              class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+              >Features</a
+            >
+            <a
+              href="index.html#Planes"
+              class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+              >Planes</a
+            >
+            <a
+              href="index.html#Missions"
+              class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+              >Missions</a
+            >
+            <a
+              href="index.html#Enemy"
+              class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+              >Enemy</a
+            >
+            <a
+              href="index.html#Gallery"
+              class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+              >Gallery</a
+            >
+            <a
+              href="./assets.html"
+              class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+              >Assets</a
+            >
+            <a
+              href="#"
+              class="menu-link block text-center border-4 border-white hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border"
+            >
+              Download
+              <img
+                src="./images/icons-download.png"
+                alt="Download Icon"
+                class="ml-2 h-4 w-4 inline"
+              />
+            </a>
+          </div>
+        </div>
+        </nav>
+   
+
+    <!-- Feature Section Start -->
+    <div class=" ">
+      <div class="md:max-w-[1200px] lg:max-w-[1400px] mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-white">X-Plane Desktop Aircraft</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <a href="../src/planesdetails/plane1details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/1.png"
+              alt="Feature Icon"
+              class="h-auto w-80  mb-8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Silver Wing
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+        </a>
+        <a href="../src/planesdetails/plane2details.html">
+
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/2.png"
+              alt="Feature Icon"
+              class="h-auto w-80 mb-8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Jaguar</h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+        </a>
+        <a href="../src/planesdetails/plane3details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/3.png"
+              alt="Feature Icon"
+              class="h-auto w-80 mb-8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Lazy Fox
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+        </a>
+        <a href="../src/planesdetails/plane4details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/4.png"
+              alt="Feature Icon"
+              class="h-40 w-80 mb-8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white"> Aero Blade
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+        </a>
+      
+        <a href="../src/planesdetails/plane6details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/6.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Copper Head
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+        <a href="../src/planesdetails/plane7details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/7.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Night Shade
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+        <a href="../src/planesdetails/plane8details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/8.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Storm Rider
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+        <a href="../src/planesdetails/plane9details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/9.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Star Blaze
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+        <a href="../src/planesdetails/plane10details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/10.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Sky Fire
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+        <a href="../src/planesdetails/plane11details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/11.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Sky Bolt
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+        <a href="../src/planesdetails/plane12details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/12.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Steel Eagle
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+        <a href="../src/planesdetails/plane13details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/13.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Viper Jet
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+            </a>
+            <a href="../src/planesdetails/plane5details.html">
+              <div
+                class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+              >
+                <img
+                  src="./images/planes/5.png"
+                  alt="Feature Icon"
+                  class="h-auto w-80 m8 mx-auto"
+                />
+                <h4 class="text-2xl font-semibold my-3 text-white">Hunter</h4>
+                <p class="text-gray-300">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Recusandae assumenda dicta odio libero sint natus, magni ducimus
+                  tempora fuga! Ex!
+                </p>
+              </div>
+            </a>
+       
+        <a href="../src/planesdetails/plane15details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/15.png"
+              alt="Feature Icon"
+              class="h-44 w-80 mb-8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Vulture Strike</h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+        </a>
+        <a href="../src/planesdetails/plane14details.html">
+          <div
+            class="flex flex-col bg-opacity-80 transition-transform duration-300 hover:-translate-y-2 hover:scale-105 rounded-lg shadow-lg p-6 items-start text-start h-[430px]"
+          >
+            <img
+              src="./images/planes/14.png"
+              alt="Feature Icon"
+              class="h-auto w-80 m-8 mx-auto"
+            />
+            <h4 class="text-2xl font-semibold my-3 text-white">Crimson Fury
+            </h4>
+            <p class="text-gray-300">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Recusandae assumenda dicta odio libero sint natus, magni ducimus
+              tempora fuga! Ex!
+            </p>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <!-- Feature Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="w-full bg-gray-900">
+      <div
+        class="mx-auto md:max-w-[1200px] lg:max-w-[1400px] px-4 sm:px-6 lg:px-8"
+      >
+        <!--Grid-->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full"
+        >
+          <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
+            <a
+              href="https://pagedone.io/"
+              class="flex justify-center lg:justify-start"
+            >
+              <img src="./images/logo.svg" alt="" class="w-28" />
+            </a>
+            <p
+              class="py-8 text-sm text-gray-200 lg:max-w-xs text-center lg:text-left max-w-[600px]"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
+              odit laudantium doloremque reiciendis commodi natus a ducimus quas
+              voluptates quae.
+            </p>
+          </div>
+          <!--End Col-->
+          <div class="lg:mx-auto text-left">
+            <h4 class="text-lg text-white font-medium mb-7">Support</h4>
+            <ul class="text-sm transition-all duration-500">
+              <li class="mb-3">
+                <a
+                  href="index.html"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="index.html#Features"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Features</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="index.html#Planes"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Planes</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="index.html#Missions"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Missions</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="index.html#Enemy"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Enemy</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="index.html#Gallery"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Gallery</a
+                >
+                <li class="mb-3">
+                  <a
+                    href="./assets.html"
+                    class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                    >Assets</a
+                  >
+                </li>
+              </li>
+            </ul>
+          </div>
+          <!--End Col-->
+          <div class="lg:mx-auto text-left">
+            <h4 class="text-lg text-white font-medium mb-7">Subscribe</h4>
+            <div
+              class="flex mt-4 md:space-x-4 space-x-2 sm:justify-center lg:mt-0"
+            >
+              <a
+                href="javascript:;"
+                class="w-9 h-9 rounded-full bg-[#5B51D8] flex justify-center items-center hover:bg-button"
+              >
+                <img
+                  src="./images/social icon/icons8-facebook-f.svg"
+                  alt=""
+                  class="w-6 h-6"
+                />
+              </a>
+              <a
+                href="javascript:;"
+                class="w-9 h-9 rounded-full bg-[#E1306C] flex justify-center items-center hover:bg-button"
+              >
+                <img
+                  src="./images/social icon/icons8-instagram-100.png"
+                  alt=""
+                  class="w-6 h-6"
+                />
+              </a>
+           
+              <a
+                href="javascript:;"
+                class="w-9 h-9 rounded-full bg-[#FD1D1D] flex justify-center items-center hover:bg-button"
+              >
+                <img
+                  src="./images/social icon/icons8-youtube-100.png"
+                  alt=""
+                  class="w-6 h-6"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--Grid-->
+        <div class="py-7 border-t border-gray-200">
+          <div
+            class="flex items-center justify-center flex-col lg:justify-center lg:flex-row"
+          >
+            <span class="text-sm text-gray-200"
+              >©<a href="">Muhammad Waqas</a> 2024, All rights reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <!-- Footer Secton End -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script/custom.js"></script>
+  </body>
+</html>
