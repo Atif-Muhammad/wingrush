@@ -5,4 +5,4 @@ RUN npm install
 RUN npm install -g serve
 COPY dist ./dist
 EXPOSE 5001
-CMD ["serve", "dist", "-l", "0.0.0.0:5001"]
+CMD ["serve", "dist", "-l", "5001"]
