@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
       /* Ensure proper spacing for small screens */
@@ -36,7 +36,7 @@
     <nav class="relative p-5 border-b-4 border-gray-800">
       <div class="absolute inset-0 bg-gray-900 opacity-60 z-0"></div>
       <div
-        class="container mx-auto flex items-center justify-between relative z-10"
+        class="container mx-auto flex items-center justify-between relative z-30"
       >
         <!-- Left side: Logo and Navigation Items -->
         <div class="flex items-center w-full">
@@ -72,7 +72,7 @@
             <a
               href="#Enemy"
               class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
-              >Enemy</a
+              >Enemies</a
             >
             <a
               href="#Gallery"
@@ -80,10 +80,10 @@
               >Gallery</a
             >
             <a
-            href="./assets.html"
-            class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border "
-            >Assets</a
-          >
+              href="./assets.html"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Assets</a
+            >
           </div>
         </div>
 
@@ -140,81 +140,81 @@
 
       <!-- Mobile Menu (hidden by default) -->
       <div
-      id="mobile-menu"
-      class="fixed top-0 left-0 w-full bg-opacity-70 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden h-full z-50 flex flex-col"
-    >
-      <div class="flex items-center justify-between p-5">
-        <div>
-          <a href="#">
-            <img src="./images/logo.svg" alt="Logo" class="h-12 w-auto" />
+        id="mobile-menu"
+        class="fixed top-0 left-0 w-full bg-opacity-70 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden h-full z-30 flex flex-col"
+      >
+        <div class="flex items-center justify-between p-5">
+          <div>
+            <a href="#">
+              <img src="./images/logo.svg" alt="Logo" class="h-12 w-auto" />
+            </a>
+          </div>
+          <button id="close-menu" class="text-white hover:text-gray-400">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col pt-16 items-center flex-grow space-y-6 px-5">
+          <a
+            href="#Home"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Home</a
+          >
+          <a
+            href="#Features"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Features</a
+          >
+          <a
+            href="#Planes"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Planes</a
+          >
+          <a
+            href="#Missions"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Missions</a
+          >
+          <a
+            href="#Enemy"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Enemies</a
+          >
+          <a
+            href="#Gallery"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Gallery</a
+          >
+          <a
+            href="./assets.html"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Assets</a
+          >
+          <a
+            href="#"
+            class="menu-link block text-center border-4 border-white hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border"
+          >
+            Download
+            <img
+              src="./images/icons-download.png"
+              alt="Download Icon"
+              class="ml-2 h-4 w-4 inline"
+            />
           </a>
         </div>
-        <button id="close-menu" class="text-white hover:text-gray-400">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
-          </svg>
-        </button>
       </div>
-      <div class="flex flex-col pt-16 items-center flex-grow space-y-6 px-5">
-        <a
-          href="#Home"
-          class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
-          >Home</a
-        >
-        <a
-          href="#Features"
-          class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
-          >Features</a
-        >
-        <a
-          href="#Planes"
-          class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
-          >Planes</a
-        >
-        <a
-          href="#Missions"
-          class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
-          >Missions</a
-        >
-        <a
-          href="#Enemy"
-          class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
-          >Enemy</a
-        >
-        <a
-          href="#Gallery"
-          class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
-          >Gallery</a
-        >
-        <a
-          href="./assets.html"
-          class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
-          >Assets</a
-        >
-        <a
-          href="#"
-          class="menu-link block text-center border-4 border-white hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border"
-        >
-          Download
-          <img
-            src="./images/icons-download.png"
-            alt="Download Icon"
-            class="ml-2 h-4 w-4 inline"
-          />
-        </a>
-      </div>
-    </div>
     </nav>
     <!-- navbar end -->
 
@@ -228,7 +228,7 @@
           class="flex flex-col items-center md:items-start space-y-4 md:w-1/2 mt-36"
         >
           <!-- Image -->
-          <img src="./images/logo.svg" alt="Logo" class="h-36 w-auto" />
+          <img src="./images/logo.svg" alt="Logo" class="h-24 w-auto" />
 
           <!-- Buttons -->
           <div class="flex flex-col gap-4 md:flex-row md:gap-4">
@@ -238,15 +238,12 @@
               >Download</a
             >
             <a
-            id="openModalButtontrailor"
-              href=" "  
+              id="openModalButtontrailor"
+              href=" "
               class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
               >Watch Trailer</a
-            >          
-           
+            >
           </div>
-
-          
         </div>
       </div>
     </section>
@@ -266,7 +263,7 @@
       <div class="mt-6 sm:mt-0 sm:ml-6 text-white">
         <h2 class="text-3xl sm:text-4xl font-bold">WAR THUNDER</h2>
         <p
-          class="mt-4 w-full md:max-w-[600px] lg:max-w-[850px]   sm:text-base lg:text-lg"
+          class="mt-4 w-full md:max-w-[600px] lg:max-w-[850px] sm:text-base lg:text-lg"
         >
           Today we’re showing you in more detail the Italian Alcione that
           features 76 mm cannons, anti-aircraft guns, and the Hedgehog mortar!
@@ -295,11 +292,14 @@
             alt="Feature Icon"
             class="h-[70px] w-[70px] mb-5 bg-black rounded-full"
           />
-          <h4 class="text-2xl font-semibold mb-3 text-white">Customize Your Flight</h4>
-          <p class="text-gray-200 tracking-wide	line-clamp-8	text-base	leading-6	">
-            Tweak the X-Plane environment to practice specific skills and simulate conditions you’ll encounter in a real cockpit.
-
-
+          <h4 class="text-2xl font-semibold mb-3 text-white">
+            Customize Your Flight
+          </h4>
+          <p
+            class="text-gray-200 tracking-wide line-clamp-8 text-base leading-6"
+          >
+            Tweak the X-Plane environment to practice specific skills and
+            simulate conditions you’ll encounter in a real cockpit.
           </p>
         </div>
 
@@ -311,11 +311,15 @@
             alt="Feature Icon"
             class="h-[70px] w-[70px] mb-5 bg-black rounded-full"
           />
-          <h4 class="text-2xl font-semibold mb-3 text-white">Learn Navigation</h4>
-          <p class="text-gray-200 tracking-wide	line-clamp-8	text-base	leading-6	">
-            X-Plane 12 comes with amazing attention to detail in all navigational systems. Brush up on the classic fundamentals in our Cessna 172 or explore the new MCDU system in our Airbus A330.
-
-
+          <h4 class="text-2xl font-semibold mb-3 text-white">
+            Learn Navigation
+          </h4>
+          <p
+            class="text-gray-200 tracking-wide line-clamp-8 text-base leading-6"
+          >
+            X-Plane 12 comes with amazing attention to detail in all
+            navigational systems. Brush up on the classic fundamentals in our
+            Cessna 172 or explore the new MCDU system in our Airbus A330.
           </p>
         </div>
         <div
@@ -326,11 +330,16 @@
             alt="Feature Icon"
             class="h-[70px] w-[70px] mb-5 bg-black rounded-full"
           />
-          <h4 class="text-2xl font-semibold mb-3 text-white">Experience a World of Add-Ons</h4>
-          <p class="text-gray-200 tracking-wide	line-clamp-8	text-base	leading-6	">
-            Everything that comes with X-Plane makes it the most realistic, most robust flight sim experience you can have. But the thriving X-Plane community has spawned countless third-party add-ons to explore and enjoy.
-
-
+          <h4 class="text-2xl font-semibold mb-3 text-white">
+            Experience a World of Add-Ons
+          </h4>
+          <p
+            class="text-gray-200 tracking-wide line-clamp-8 text-base leading-6"
+          >
+            Everything that comes with X-Plane makes it the most realistic, most
+            robust flight sim experience you can have. But the thriving X-Plane
+            community has spawned countless third-party add-ons to explore and
+            enjoy.
           </p>
         </div>
       </div>
@@ -372,20 +381,17 @@
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Fast and agile, perfect for quick strikes. Best for short
+                    missions due to low fuel and weak brakes.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane1details.html"
+                      href="./plane1details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -418,20 +424,17 @@
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Balanced speed and control with great braking and fuel.
+                    Slightly slower, ideal for tactical missions.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane2details.html"
+                      href="./plane2details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -463,20 +466,17 @@
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    High speed and powerful thrust make it great for hit-and-run
+                    attacks. Weak brakes, needs skillful handling.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane3details.html"
+                      href="./plane3details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -504,24 +504,21 @@
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Aero Blade</h2>
+                  <h2 class="text-2xl font-bold mb-4 text-white">Sky Fire</h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Stable and precise with decent fuel and control. Slower
+                    speed makes it better for strategic play.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane4details.html"
+                      href="./plane10details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -539,7 +536,7 @@
             >
               <div class="flex flex-col md:flex-row md:items-center w-full">
                 <div class="w-full md:w-2/5 flex justify-center mb-4 md:mb-0">
-                 <img
+                  <img
                     src="./images/planes/rotate planes/1_5.gif"
                     alt="Plane Image"
                     class="w-[440px] h-auto opacity-80"
@@ -549,26 +546,21 @@
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">
-                    Vulture Strike
-                  </h2>
+                  <h2 class="text-2xl font-bold mb-4 text-white">Hunter</h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Versatile with balanced speed and fuel. Limited brakes, but
+                    great for mid-range, flexible combat.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane15details.html"
+                      href="./plane5details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -587,35 +579,32 @@
               <div class="flex flex-col md:flex-row md:items-center w-full">
                 <div class="w-full md:w-2/5 flex justify-center mb-4 md:mb-0">
                   <img
-                  src="./images/planes/rotate planes/1_6.gif"
-                  alt="Plane Image"
-                  class="w-[440px] h-auto opacity-80"
-                />
+                    src="./images/planes/rotate planes/1_6.gif"
+                    alt="Plane Image"
+                    class="w-[440px] h-auto opacity-80"
+                  />
                 </div>
                 <div class="w-full md:w-3/5 text-left md:px-8 lg:px-16">
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
                   <h2 class="text-2xl font-bold mb-4 text-white">
-                    Silver Wing
+                    Cooper Head
                   </h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Built for long missions with strong endurance. Good speed,
+                    but needs care due to weak brakes.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane5details.html"
+                      href="./plane6details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -634,35 +623,32 @@
               <div class="flex flex-col md:flex-row md:items-center w-full">
                 <div class="w-full md:w-2/5 flex justify-center mb-4 md:mb-0">
                   <img
-                  src="./images/planes/rotate planes/1_7.gif"
-                  alt="Plane Image"
-                  class="w-[440px] h-auto opacity-80"
-                />
+                    src="./images/planes/rotate planes/1_7.gif"
+                    alt="Plane Image"
+                    class="w-[440px] h-auto opacity-80"
+                  />
                 </div>
                 <div class="w-full md:w-3/5 text-left md:px-8 lg:px-16">
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
                   <h2 class="text-2xl font-bold mb-4 text-white">
-                    Copper Head
+                    Storm Rider
                   </h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Endurance-focused with steady control and fuel. Not very
+                    fast, but reliable for longer battles.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane6details.html"
+                      href="./plane7details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -681,35 +667,30 @@
               <div class="flex flex-col md:flex-row md:items-center w-full">
                 <div class="w-full md:w-2/5 flex justify-center mb-4 md:mb-0">
                   <img
-                  src="./images/planes/rotate planes/1_8.gif"
-                  alt="Plane Image"
-                  class="w-[440px] h-auto opacity-80"
-                />
+                    src="./images/planes/rotate planes/1_8.gif"
+                    alt="Plane Image"
+                    class="w-[440px] h-auto opacity-80"
+                  />
                 </div>
                 <div class="w-full md:w-3/5 text-left md:px-8 lg:px-16">
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">
-                    Night Shade
-                  </h2>
+                  <h2 class="text-2xl font-bold mb-4 text-white">Star Blaze</h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Fast and powerful with great thrust and fuel. Braking is
+                    weaker, but excellent for offense.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane7details.html"
+                      href="./plane8details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -738,25 +719,22 @@
                     Our Fleet of Plane
                   </h4>
                   <h2 class="text-2xl font-bold mb-4 text-white">
-                    Storm Rider
+                    Night Shade
                   </h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Stealthy and fuel-efficient with strong control. Lower
+                    thrust, ideal for precise, long missions.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane8details.html"
+                      href="./plane9details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -784,26 +762,21 @@
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">
-                    Star Blaze
-                  </h2>
+                  <h2 class="text-2xl font-bold mb-4 text-white">Aero Blade</h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Durable and stable with high fuel. Low thrust but handles
+                    well—great for long, tactical missions.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane9details.html"
+                      href="./plane4details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -831,26 +804,21 @@
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">
-                     Sky Fire
-                  </h2>
+                  <h2 class="text-2xl font-bold mb-4 text-white">Sky Bolt</h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Balanced fighter with strong fuel and reliable speed.
+                    Braking is weaker, needs skilled control.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane10details.html"
+                      href="./plane11details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -869,35 +837,30 @@
               <div class="flex flex-col md:flex-row md:items-center w-full">
                 <div class="w-full md:w-2/5 flex justify-center mb-4 md:mb-0">
                   <img
-                  src="./images/planes/rotate planes/1_12.gif"
-                  alt="Plane Image"
-                  class="w-[440px] h-auto opacity-80"
-                />
+                    src="./images/planes/rotate planes/1_12.gif"
+                    alt="Plane Image"
+                    class="w-[440px] h-auto opacity-80"
+                  />
                 </div>
                 <div class="w-full md:w-3/5 text-left md:px-8 lg:px-16">
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
                     Our Fleet of Plane
                   </h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">
-                    Sky Bolt
-                  </h2>
+                  <h2 class="text-2xl font-bold mb-4 text-white">Viper Jet</h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Speedy and reliable with solid thrust and fuel. Needs
+                    careful braking but fits many combat roles.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane11details.html"
+                      href="./plane12details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -916,10 +879,10 @@
               <div class="flex flex-col md:flex-row md:items-center w-full">
                 <div class="w-full md:w-2/5 flex justify-center mb-4 md:mb-0">
                   <img
-                  src="./images/planes/rotate planes/1_13.gif"
-                  alt="Plane Image"
-                  class="w-[440px] h-auto opacity-80"
-                />
+                    src="./images/planes/rotate planes/1_13.gif"
+                    alt="Plane Image"
+                    class="w-[440px] h-auto opacity-80"
+                  />
                 </div>
                 <div class="w-full md:w-3/5 text-left md:px-8 lg:px-16">
                   <h4 class="text-md font-semibold text-blue-300 mb-2">
@@ -931,20 +894,17 @@
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Built for long missions with great control and fuel.
+                    Balanced performance but lacks burst power.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane12details.html"
+                      href="./plane13details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -973,25 +933,22 @@
                     Our Fleet of Plane
                   </h4>
                   <h2 class="text-2xl font-bold mb-4 text-white">
-                    Viper Jet
+                    Crimson Fury
                   </h2>
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Super fast and aggressive with high thrust. Demands skillful
+                    handling, perfect for offensive pilots.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane1details.html"
+                      href="./plane14details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -1025,20 +982,17 @@
                   <p
                     class="text-white mb-4 w-full md:max-w-[520px] lg:max-w-[620px]"
                   >
-                    The Van’s Plane RV-10 is a four-seat, single-engine,
-                    low-wing airplane, first delivered in 2003. It can carry 3
-                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
-                    real life, the RV-10 is sold as an assembly kit to
-                    homebuilders.
+                    Top-tier speed and power with excellent control and fuel.
+                    Requires skilled pilots for high-speed combat.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
                     <a
                       href="./planes.html"
                       class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-                      >All Plane</a
+                      >All Planes</a
                     >
                     <a
-                      href="./planesdetails/plane14details.html"
+                      href="./plane15details.html"
                       class="bg-transparent border-4 border-gray-100 hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
                       >Details</a
                     >
@@ -1059,7 +1013,7 @@
               <img
                 src="./images/icons8-less-than.png"
                 alt="Previous"
-                class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button "
+                class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
               />
             </div>
           </div>
@@ -1070,7 +1024,7 @@
               <img
                 src="./images/icons8-greater-than.png"
                 alt="Next"
-                class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button "
+                class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
               />
             </div>
           </div>
@@ -1084,14 +1038,14 @@
             <img
               src="./images/icons8-less-than.png"
               alt="Previous"
-              class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button "
+              class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
             />
           </div>
           <div id="slider-button-right-plane" class="swiper-button-right">
             <img
               src="./images/icons8-greater-than.png"
               alt="Next"
-              class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button "
+              class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
             />
           </div>
         </div>
@@ -1122,17 +1076,17 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-center text-sm">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Fly through narrow valleys, dodge enemy fire, and destroy towers
+                to weaken enemy control. Upgrade your plane to survive growing
+                threats.
               </p>
               <a
-              href="#"
-              id="openModalButton9"
-              class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
-            >
-              Preview
-            </a>
+                href="#"
+                id="openModalButton9"
+                class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+              >
+                Preview
+              </a>
             </div>
           </div>
           <div
@@ -1147,9 +1101,9 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-sm text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Destroy towers, fight monsters and dragons, and shoot gas tanks
+                for extra points while navigating deadly defenses in the
+                mountains.
               </p>
               <a
                 href="#"
@@ -1172,9 +1126,8 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-sm text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Blast monsters on the bridge before they reach the city. Aim
+                carefully—each shot counts against the heavily armed enemies.
               </p>
               <a
                 href="#"
@@ -1197,9 +1150,8 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-sm text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Take down the patrol plane before it alerts reinforcements. Use
+                precise timing and quick reflexes to clear the skies.
               </p>
               <a
                 href="#"
@@ -1222,9 +1174,8 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-sm text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Stop fast, deadly reptors from crossing the bridge. Use your
+                firepower to protect the city before they break through.
               </p>
               <a
                 href="#"
@@ -1247,9 +1198,8 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-sm text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Dodge heavy fire and hit weak points to defeat a powerful enemy
+                with advanced weapons. This is your toughest battle yet.
               </p>
               <a
                 href="#"
@@ -1272,9 +1222,8 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-sm text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Make a perfect landing on the platform to secure the city. One
+                wrong move could risk the mission—precision is key.
               </p>
               <a
                 href="#"
@@ -1297,9 +1246,8 @@
               class="absolute inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center text-white p-4 flex-col opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             >
               <p class="mb-4 text-sm text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Recusandae assumenda dicta odio libero sint natus, magni ducimus
-                tempora fuga! Ex!
+                Dodge flames and shoot down rampaging dragons. Hit their weak
+                spots to survive their fiery onslaught and protect your plane.
               </p>
               <a
                 href="#"
@@ -1318,196 +1266,411 @@
     <!-- Enemy Section start -->
     <div class="w-full relative md:py-36 py-12" id="Enemy">
       <div class="text-center mb-12">
-        <h2 class="md:text-7xl text-5xl font-bold text-white">Enemy</h2>
+        <h2 class="md:text-7xl text-5xl font-bold text-white">Enemies</h2>
       </div>
-      <div class="swiper fraction-slide-carousel-enemy swiper-container relative flex flex-col">
+      <div
+        class="swiper fraction-slide-carousel-enemy swiper-container relative flex flex-col"
+      >
         <div class="swiper-wrapper flex-1">
-            <!-- Slide 1 -->
-            <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
-                <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-                <div class="relative bg-opacity-40 rounded-2xl flex flex-col items-center text-center md:p-6 py-6 z-10">
-                    <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
-                        <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                            <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                            <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
-                            <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                                The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
-                            </p>
-                            <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                                <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg">All Enemy</a>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-2/5 flex md:justify-start lg:justify-start 2xl:justify-end mb-4 md:mb-0">
-                          <img src="./images/enemy/rotate enemy/4.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
-                      </div>
-                      
-                    </div>
-                </div>
-            </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Shade Reaper
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    This agile and shadowy figure, cloaked in dark hues, emerges
+                    from the mountain with a deadly scythe-like arm. The Shade
+                    Reaper is a swift and relentless ground monster that strikes
+                    fear into the city defenders. Its eerie movements make it
+                    hard to target, and it thrives in close combat.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
-                    <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg"
+                      >All Enemies</a
+                    >
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/6.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex md:justify-start lg:justify-start 2xl:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/4.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Azure Wyvern
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    A majestic, bright blue dragon-like creature with sharp
+                    horns and radiant wings. The Azure Wyvern dominates the
+                    skies, attacking your plane with icy breath and swift dives.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
                     <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/9.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/6.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Verdant Wyvern
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    A green, luminous dragon-like creature with bright yellow
+                    wings. The Verdant Wyvern soars high above the battlefield,
+                    spreading poisonous gas to weaken city defenses. Its agility
+                    in the air makes it a challenging foe for the plane to
+                    counter.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
                     <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/10.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/9.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Inferno Drake
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    This fiery dragon with orange and red wings spews molten
+                    lava from its mouth, setting the city ablaze. The Inferno
+                    Drake is a ferocious attacker that deals heavy damage to
+                    buildings and spreads chaos with its fire attacks
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
                     <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/13.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/10.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Frost Phantom
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    An icy, pale purple dragon with frost-covered wings. The
+                    Frost Phantom freezes anything it touches, slowing down the
+                    city’s response and shattering defenses. Its icy breath can
+                    immobilize even the fastest planes, making it a formidable
+                    aerial threat.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
                     <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/26.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/13.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Dread Viper
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    A sleek black jet armed with heat-seeking missiles and
+                    rapid-fire guns. Fast, agile, and deadly, it relentlessly
+                    hunts you in the skies to ensure the city's downfall.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
                     <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/28.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/26.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Cart Raptor
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    A cunning green raptor that pulls a wooden cart loaded with
+                    mysterious cargo. Despite its unusual job, the Cart Raptor
+                    is agile and ready to defend its treasure with
+                    ferocious speed.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
                     <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/1.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/28.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide flex flex-col items-center justify-center relative md:pt-6">
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
             <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
-            <div class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10">
-              <div class="flex md:flex-row md:items-center text-center flex-col-reverse">
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
                 <div class="w-full md:w-3/5 text-left md:px-12 px-6">
-                  <h4 class="text-md font-semibold text-blue-300 mb-2">Our Fleet of Enemy</h4>
-                  <h2 class="text-2xl font-bold mb-4 text-white">Van's Enemy RV-1043</h2>
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Chaos Crawler
+                  </h2>
                   <p class="text-white mb-4 w-full lg:max-w-[840px]">
-                    The Van’s Enemy RV-10 is a four-seat, single-engine, low-wing airplane, first delivered in 2003. It can carry 3 passengers 825 mi/1,328 km with a cruise speed of 171 kn. In real life, the RV-10 is sold as an assembly kit to homebuilders.
+                    A grotesque, mutant with jagged limbs that crush anything in
+                    its path. It stalks the land, tearing planes from the sky
+                    with unpredictable strikes.
                   </p>
                   <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
-                    <a href="./enemy.html" class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4">All Enemy</a>
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
                     <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
                   </div>
                 </div>
-                <div class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0">
-                  <img src="./images/enemy/rotate enemy/2.gif" alt="Plane Image" class="w-full md:w-72 h-80 opacity-80" />
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/1.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide flex flex-col items-center justify-center relative md:pt-6"
+          >
+            <div class="absolute inset-0 bg-gray-800 opacity-80 z-0"></div>
+            <div
+              class="relative bg-opacity-40 rounded-2xl h-auto flex flex-col items-center text-center md:p-6 py-6 z-10"
+            >
+              <div
+                class="flex md:flex-row md:items-center text-center flex-col-reverse"
+              >
+                <div class="w-full md:w-3/5 text-left md:px-12 px-6">
+                  <h4 class="text-md font-semibold text-blue-300 mb-2">
+                    Our Fleet of Enemy
+                  </h4>
+                  <h2 class="text-2xl font-bold mb-4 text-white">
+                    Van's Enemy RV-1043
+                  </h2>
+                  <p class="text-white mb-4 w-full lg:max-w-[840px]">
+                    The Van’s Enemy RV-10 is a four-seat, single-engine,
+                    low-wing airplane, first delivered in 2003. It can carry 3
+                    passengers 825 mi/1,328 km with a cruise speed of 171 kn. In
+                    real life, the RV-10 is sold as an assembly kit to
+                    homebuilders.
+                  </p>
+                  <div class="flex flex-col gap-2 w-full sm:flex-row sm:gap-4">
+                    <a
+                      href="./enemy.html"
+                      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4"
+                      >All Enemies</a
+                    >
+                    <!-- <a href="#" class="bg-transparent border-2 hover:bg-yellow-600 hover:text-black text-white font-semibold py-3 px-5 rounded-lg text-center hover:border-2 hover:border-yellow-900">Details</a> -->
+                  </div>
+                </div>
+                <div
+                  class="w-full md:w-2/5 flex justify-center md:justify-end mb-4 md:mb-0"
+                >
+                  <img
+                    src="./images/enemy/rotate enemy/2.gif"
+                    alt="Plane Image"
+                    class="w-full md:w-72 h-80 opacity-80"
+                  />
                 </div>
               </div>
             </div>
@@ -1515,36 +1678,50 @@
           <!-- Repeat similar structure for other slides -->
           <!-- Add your additional slides here -->
         </div>
-    
-      <!-- Navigation buttons for larger screens (lg and above) -->
-<div class="xl:flex hidden">
-  <div class="absolute top-1/2 left-10 transform -translate-y-1/2 z-10">
-      <div id="slider-button-left-enemy" class="swiper-button-left">
-          <img src="./images/icons8-less-than.png" alt="Previous" 
-               class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button" />
-      </div>
-  </div>
-  <div class="absolute top-1/2 right-16 transform -translate-y-1/2 z-10">
-      <div id="slider-button-right-enemy" class="swiper-button-right">
-          <img src="./images/icons8-greater-than.png" alt="Next" 
-               class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button" />
-      </div>
-  </div>
-</div>
 
-<!-- Navigation buttons for medium (md) and small screens -->
-<div class="xl:hidden flex items-center justify-center absolute inset-x-0 bottom-[18px] z-10 gap-4">
-  <div id="slider-button-left-enemy" class="swiper-button-left">
-      <img src="./images/icons8-less-than.png" alt="Previous" 
-           class="w-12 h-12 rounded-full border-2 border-hover-button-border hover:bg-hover-button" />
-  </div>
-  <div id="slider-button-right-enemy" class="swiper-button-right">
-      <img src="./images/icons8-greater-than.png" alt="Next" 
-           class="w-12 h-12 rounded-full border-2 border-hover-button-border hover:bg-hover-button" />
-  </div>
-</div>
+        <!-- Navigation buttons for larger screens (lg and above) -->
+        <div class="xl:flex hidden">
+          <div class="absolute top-1/2 left-10 transform -translate-y-1/2 z-10">
+            <div id="slider-button-left-enemy" class="swiper-button-left">
+              <img
+                src="./images/icons8-less-than.png"
+                alt="Previous"
+                class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute top-1/2 right-16 transform -translate-y-1/2 z-10"
+          >
+            <div id="slider-button-right-enemy" class="swiper-button-right">
+              <img
+                src="./images/icons8-greater-than.png"
+                alt="Next"
+                class="w-10 h-10 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
+              />
+            </div>
+          </div>
+        </div>
 
-
+        <!-- Navigation buttons for medium (md) and small screens -->
+        <div
+          class="xl:hidden flex items-center justify-center absolute inset-x-0 bottom-[18px] z-10 gap-4"
+        >
+          <div id="slider-button-left-enemy" class="swiper-button-left">
+            <img
+              src="./images/icons8-less-than.png"
+              alt="Previous"
+              class="w-12 h-12 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
+            />
+          </div>
+          <div id="slider-button-right-enemy" class="swiper-button-right">
+            <img
+              src="./images/icons8-greater-than.png"
+              alt="Next"
+              class="w-12 h-12 rounded-full border-2 border-hover-button-border hover:bg-hover-button"
+            />
+          </div>
+        </div>
 
         <!-- <div
         class="md:hidden flex items-center justify-center absolute inset-x-0 bottom-1 z-10 gap-4"
@@ -1575,21 +1752,23 @@
         <h2 class="md:text-7xl text-5xl font-bold text-white">Gallery</h2>
       </div>
       <div class="bg-gray-800 bg-opacity-80">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3 max-w-[1200px] lg:max-w-[1400px] mx-auto px-2 py-4 rounded-lg">
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-3 max-w-[1200px] lg:max-w-[1400px] mx-auto px-2 py-4 rounded-lg"
+        >
           <!-- Left Side -->
           <div class="flex flex-col gap-2 md:gap-4">
             <img
               src="./images/gallery/1.jpg"
               alt=""
-              class="w-full h-48 md:h-64 lg:h-80 object-cover   shadow-lg shadow-gray-600 border-4 border-gray-800"
+              class="w-full h-48 md:h-64 lg:h-80 object-cover shadow-lg shadow-gray-600 border-4 border-gray-800"
             />
             <img
               src="./images/gallery/2.jpg"
               alt=""
-              class="w-full h-48 md:h-64 lg:h-80 object-cover   shadow-lg shadow-gray-600 border-4 border-gray-800"
+              class="w-full h-48 md:h-64 lg:h-80 object-cover shadow-lg shadow-gray-600 border-4 border-gray-800"
             />
           </div>
-      
+
           <!-- Middle Section -->
           <div>
             <div class="flex gap-2 md:gap-3">
@@ -1617,22 +1796,22 @@
               />
             </div>
           </div>
-      
+
           <!-- Right Side -->
           <div class="flex flex-col gap-2 md:gap-4">
             <img
               src="./images/gallery/7.jpg"
               alt=""
-              class="w-full h-48 md:h-64 lg:h-80 object-cover   shadow-lg shadow-gray-600 border-4 border-gray-800"
+              class="w-full h-48 md:h-64 lg:h-80 object-cover shadow-lg shadow-gray-600 border-4 border-gray-800"
             />
             <img
               src="./images/gallery/4.jpg"
               alt=""
-              class="w-full h-48 md:h-64 lg:h-80 object-cover   shadow-lg shadow-gray-600 border-4 border-gray-800"
+              class="w-full h-48 md:h-64 lg:h-80 object-cover shadow-lg shadow-gray-600 border-4 border-gray-800"
             />
           </div>
         </div>
-        
+
         <div class="flex justify-center pb-4 mt-6 md:mt-14">
           <a
             href="./gallery.html"
@@ -1642,7 +1821,6 @@
           </a>
         </div>
       </div>
-      
     </div>
     <!-- Gallery Section End -->
 
@@ -1665,9 +1843,10 @@
             <p
               class="py-8 text-sm text-gray-200 lg:max-w-xs text-center lg:text-left max-w-[600px]"
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta,
-              odit laudantium doloremque reiciendis commodi natus a ducimus quas
-              voluptates quae.
+              Gear up for high-speed air combat in WingRush! Pilot powerful
+              planes, destroy deadly monsters pouring from the mountains, and
+              defend the city from total destruction. Only your skill
+              can turn the tide!
             </p>
           </div>
           <!--End Col-->
@@ -1706,7 +1885,7 @@
                 <a
                   href="#Enemy"
                   class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
-                  >Enemy</a
+                  >Enemies</a
                 >
               </li>
               <li class="mb-3">
@@ -1727,54 +1906,50 @@
           </div>
           <!--End Col-->
           <div class="lg:mx-auto text-left">
-            <h4 class="text-lg text-white font-medium mb-7">Subscribe</h4>
-            <!-- <div
-              class="flex mt-4 md:space-x-4 space-x-2 sm:justify-center lg:mt-0"
-            >
+            <h4 class="text-lg text-white font-medium mb-7">Follow Us:</h4>
+
+            <div class="flex mt-4 mb-7 space-x-4 sm:justify-center lg:mt-0">
               <a
-                href="javascript:;"
-                class="w-8 h-8 transition-all duration-500 flex justify-center items-center p-1 rounded-full bg-[#5B51D8] hover:bg-button"
+                href="https://www.facebook.com/igniPulse/"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-[#5B51D8] flex justify-center items-center hover:text-button"
               >
                 <img
                   src="./images/social icon/icons8-facebook-f.svg"
                   alt=""
-                  class="w-6 h-6"
+                  class="w-[1.75rem] h-[1.125rem] text-white"
                 />
               </a>
               <a
-                href="javascript:;"
-                class="w-8 h-8 transition-all duration-500 flex justify-center items-center p-1 rounded-full bg-[#E1306C] hover:bg-button"
+                href="https://www.instagram.com/ignipulse"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-[#E1306C] flex justify-center items-center hover:text-button"
               >
                 <img
                   src="./images/social icon/icons8-instagram-100.png"
                   alt=""
-                  class="w-6 h-6"
+                  class="w-[1.25rem] h-[1.25rem] text-white"
                 />
               </a>
-         
+
               <a
-                href="javascript:;"
-                class="w-8 h-8 transition-all duration-500 flex justify-center items-center p-1 rounded-full bg-[#FD1D1D] hover:bg-button"
+                href="https://www.youtube.com/channel/UCOI2_8463WfbJJKSBd4RI8g"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-[#FD1D1D] flex justify-center items-center hover:text-button"
               >
                 <img
                   src="./images/social icon/icons8-youtube-100.png"
                   alt=""
-                  class="w-10 h-6"
+                  class="w-[1.25rem] h-[1.25rem] text-white"
                 />
               </a>
-            </div> -->
-            <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
-              <a href="javascript:;" class="w-9 h-9 rounded-full bg-[#5B51D8] flex justify-center items-center hover:text-button">
-                <img src="./images/social icon/icons8-facebook-f.svg" alt="" class="w-[1.75rem] h-[1.125rem] text-white">
-              </a>
-              <a href="javascript:;" class="w-9 h-9 rounded-full bg-[#E1306C] flex justify-center items-center hover:text-button">
-                <img src="./images/social icon/icons8-instagram-100.png" alt="" class="w-[1.25rem] h-[1.25rem] text-white">
-              </a>
-               
-              <a href="javascript:;" class="w-9 h-9 rounded-full bg-[#FD1D1D] flex justify-center items-center hover:text-button">
-                <img src="./images/social icon/icons8-youtube-100.png" alt="" class="w-[1.25rem] h-[1.25rem] text-white">
-              </a>
             </div>
+
+            <a
+              href="./Privacy-Policy.html"
+              class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+              >Privacy and Policy</a
+            >
           </div>
         </div>
         <!--Grid-->
@@ -1783,7 +1958,8 @@
             class="flex items-center justify-center flex-col lg:justify-center lg:flex-row"
           >
             <span class="text-sm text-gray-200"
-              >©<a href="">Muhammad Waqas</a> 2024, All rights reserved.</span
+              >©<a href="https://ignipulse.com/" target="_blank">igniPulse</a>
+              2025, All rights reserved.</span
             >
           </div>
         </div>
@@ -1791,244 +1967,288 @@
     </footer>
     <!-- Footer Secton End -->
 
-  <!-- modeltrailor -->
-  <div
-  id="modaltrailor"
-  class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
->
-  <div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
-    <video autoplay muted controls class="w-full rounded-lg">
-      <source src="./images/missions videos/1 - 3.mp4" type="video/mp4">
-    </video>
-    <div class="flex justify-between">
-      <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-        id="closeModalButton1"
-        class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6"
+    <!-- modeltrailor -->
+    <div
+      id="modaltrailor"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+    >
+      <div
+        class="bg-gray-800 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
       >
-        Youtube
-      </a>
+        <div class="relative w-full pt-50">
+          <iframe
+            class="absolute top-0 left-0 z-50 w-full h-full rounded-lg"
+            src="https://www.youtube.com/embed/PKHk3aJB6Og?si=DfedYBQkMDaaaDJI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
 
-      <button
-        id="closeModalButtontrailor"
-        class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
-      >
-        Close
-      </button>
+        <div class="flex justify-between">
+          <a
+            href="https://www.youtube.com/channel/UCOI2_8463WfbJJKSBd4RI8g"
+            target="_blank"
+            id="closeModalButton1"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6"
+          >
+            Youtube
+          </a>
+
+          <button
+            id="closeModalButtontrailor"
+            class="bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-  <!-- model1 -->
-  <div
-  id="modal9"
-  class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-  <div class="bg-opacity-60 rounded-lg md:p-8 p-2 max-w-5xl w-full mx-4 sm:mx-6 lg:mx-8 xl:mx-12 shadow-lg shadow-gray-600 border-4 border-gray-800">
-    <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-      <source src="./images/missions videos/1 - 3.mp4" type="video/mp4">
-    </video>
-    <div class="flex flex-col lg:flex-row justify-between mt-4">
-      <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-        class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mb-4 lg:mb-0 text-center"
+    <script>
+      const closeButton = document.getElementById("closeModalButtontrailor");
+      const modal = document.getElementById("modaltrailor");
+      const iframe = modal.querySelector("iframe");
+
+      closeButton.addEventListener("click", () => {
+        // Hide the modal
+        modal.classList.add("hidden");
+
+        // Stop the video by resetting the src
+        iframe.src = iframe.src;
+      });
+    </script>
+
+    <!-- model1 -->
+    <div
+      id="modal9"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
+    >
+      <div
+        class="bg-opacity-60 rounded-lg md:p-8 p-2 max-w-5xl w-full mx-4 sm:mx-6 lg:mx-8 xl:mx-12 shadow-lg shadow-gray-600 border-4 border-gray-800"
       >
-        Youtube
-      </a>
-      <button
-        id="closeModalButton9"
-        class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg"
-      >
-        Close
-      </button>
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/1 - 3.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mb-4 lg:mb-0 text-center"
+          >
+            Youtube
+          </a>
+          <button
+            id="closeModalButton9"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg"
+          >
+            Close
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
- 
-  <div
-  id="modal2"
-  class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-  <div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
-   
-    <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-      <source src="./images/missions videos/4 - 7.mp4" type="video/mp4">
-    </video>
-    <div class="flex flex-col lg:flex-row justify-between mt-4">
-      <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-     
-      class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4  mt-6 text-center"
-    >
-      Youtube
-    </a>
 
-      <button
-        id="closeModalButton2"
-        class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6 "
+    <div
+      id="modal2"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
+    >
+      <div
+        class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
       >
-        Close
-      </button>
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/4 - 7.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6 text-center"
+          >
+            Youtube
+          </a>
+
+          <button
+            id="closeModalButton2"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<div
-id="modal3"
-class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-<div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
- 
-  <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-    <source src="./images/missions videos/8 - 9.mp4" type="video/mp4">
-  </video>
-  <div class="flex flex-col lg:flex-row justify-between mt-4">
-    <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-   
-    class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4  mt-6 text-center"
-  >
-    Youtube
-  </a>
-
-    <button
-      id="closeModalButton3"
-      class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6 "
+    <div
+      id="modal3"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
     >
-      Close
-    </button>
-  </div>
-</div>
-</div>
-<div
-id="modal4"
-class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-<div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
- 
-  <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-    <source src="./images/missions videos/10 - 12.mp4" type="video/mp4">
-  </video>
-  <div class="flex flex-col lg:flex-row justify-between mt-4">
-    <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-   
-    class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4  mt-6 text-center"
-  >
-    Youtube
-  </a>
+      <div
+        class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
+      >
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/8 - 9.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6 text-center"
+          >
+            Youtube
+          </a>
 
-    <button
-      id="closeModalButton4"
-      class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6 "
+          <button
+            id="closeModalButton3"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modal4"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
     >
-      Close
-    </button>
-  </div>
-</div>
-</div>
-<div
-id="modal5"
-class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-<div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
- 
-  <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-    <source src="./images/missions videos/13 - 15.mp4" type="video/mp4">
-  </video>
-  <div class="flex flex-col lg:flex-row justify-between mt-4">
-    <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-   
-    class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4  mt-6 text-center"
-  >
-    Youtube
-  </a>
+      <div
+        class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
+      >
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/10 - 12.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6 text-center"
+          >
+            Youtube
+          </a>
 
-    <button
-      id="closeModalButton5"
-      class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6 "
+          <button
+            id="closeModalButton4"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modal5"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
     >
-      Close
-    </button>
-  </div>
-</div>
-</div>
-<div
-id="modal6"
-class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-<div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
- 
-  <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-    <source src="./images/missions videos/16 - 18.mp4" type="video/mp4">
-  </video>
-  <div class="flex flex-col lg:flex-row justify-between mt-4">
-    <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-   
-    class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4  mt-6 text-center"
-  >
-    Youtube
-  </a>
+      <div
+        class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
+      >
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/13 - 15.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6 text-center"
+          >
+            Youtube
+          </a>
 
-    <button
-      id="closeModalButton6"
-      class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6 "
+          <button
+            id="closeModalButton5"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modal6"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
     >
-      Close
-    </button>
-  </div>
-</div>
-</div>
-<div
-id="modal7"
-class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-<div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
- 
-  <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-    <source src="./images/missions videos/19 - 24.mp4" type="video/mp4">
-  </video>
-  <div class="flex flex-col lg:flex-row justify-between mt-4">
-    <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-   
-    class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4  mt-6 text-center"
-  >
-    Youtube
-  </a>
+      <div
+        class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
+      >
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/16 - 18.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6 text-center"
+          >
+            Youtube
+          </a>
 
-    <button
-      id="closeModalButton7"
-      class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6 "
+          <button
+            id="closeModalButton6"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modal7"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
     >
-      Close
-    </button>
-  </div>
-</div>
-</div>
-<div
-id="modal8"
-class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
->
-<div class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800">
- 
-  <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
-    <source src="./images/missions videos/25 - 30.mp4" type="video/mp4">
-  </video>
-  <div class="flex flex-col lg:flex-row justify-between mt-4">
-    <a href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k" target="_blank"
-   
-    class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4  mt-6 text-center"
-  >
-    Youtube
-  </a>
+      <div
+        class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
+      >
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/19 - 24.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6 text-center"
+          >
+            Youtube
+          </a>
 
-    <button
-      id="closeModalButton8"
-      class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6 "
+          <button
+            id="closeModalButton7"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="modal8"
+      class="fixed inset-0 flex items-center justify-center bg-black md:bg-opacity-50 hidden"
     >
-      Close
-    </button>
-  </div>
-</div>
-</div>
+      <div
+        class="bg-opacity-60 rounded-lg p-8 max-w-5xl w-full shadow-lg shadow-gray-600 border-4 border-gray-800"
+      >
+        <video autoplay muted controls class="w-full md:h-full h-60 rounded-lg">
+          <source src="./images/missions videos/25 - 30.mp4" type="video/mp4" />
+        </video>
+        <div class="flex flex-col lg:flex-row justify-between mt-4">
+          <a
+            href="https://youtu.be/lNYZDMtVtlQ?si=ktdHYOnXFkL8Tc6k"
+            target="_blank"
+            class="border-4 border-button-border bg-button hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border hover:border-4 mt-6 text-center"
+          >
+            Youtube
+          </a>
+
+          <button
+            id="closeModalButton8"
+            class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg mt-6"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/custom.js"></script>
     <script src="./script/model.js"></script>
-
   </body>
 </html>

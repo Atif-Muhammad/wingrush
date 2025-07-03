@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="font-merriweather bg-[url(././images/hero-section.jpg)] bg-fixed bg-center bg-no-repeat bg-cover"
+  >
+    <!-- navbar start -->
+    <nav class="relative p-5 border-b-4 border-gray-800">
+      <div class="absolute inset-0 bg-gray-900 opacity-60 z-0"></div>
+      <div
+        class="container mx-auto flex items-center justify-between relative z-30"
+      >
+        <!-- Left side: Logo and Navigation Items -->
+        <div class="flex items-center w-full">
+          <!-- Logo -->
+          <div>
+            <a href="#"
+              ><img src="./images/logo.svg" alt="Logo" class="h-12 w-auto"
+            /></a>
+          </div>
+
+          <!-- Navigation Items (hidden on small screens) -->
+          <div class="hidden md:flex flex-grow space-x-5 ml-14">
+            <a
+              href="#Home"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Home</a
+            >
+            <a
+              href="#Features"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Features</a
+            >
+            <a
+              href="#Planes"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Planes</a
+            >
+            <a
+              href="#Missions"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Missions</a
+            >
+            <a
+              href="#Enemy"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Enemies</a
+            >
+            <a
+              href="#Gallery"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Gallery</a
+            >
+            <a
+              href="./assets.html"
+              class="text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border"
+              >Assets</a
+            >
+          </div>
+        </div>
+
+        <!-- Right side: Download Button (visible on medium screens and larger) -->
+        <a
+          href="#"
+          class="hidden md:flex items-center border-4 border-white hover:bg-hover-button text-white font-bold py-3 px-8 rounded-lg hover:border-hover-button-border hover:border-4 text-base"
+        >
+          Download
+          <img
+            src="./images/icons-download.png"
+            alt="Download Icon"
+            class="ml-2 h-5 w-5"
+          />
+        </a>
+
+        <!-- Mobile Menu Toggle (visible on small screens) -->
+        <button
+          id="menu-toggle"
+          class="md:hidden flex items-center text-white hover:text-gray-400"
+        >
+          <svg
+            id="menu-icon"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+          <svg
+            id="close-icon"
+            class="w-6 h-6 hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (hidden by default) -->
+      <div
+        id="mobile-menu"
+        class="fixed top-0 left-0 w-full bg-opacity-70 transform -translate-x-full transition-transform duration-300 ease-in-out md:hidden h-full z-30 flex flex-col"
+      >
+        <div class="flex items-center justify-between p-5">
+          <div>
+            <a href="#">
+              <img src="./images/logo.svg" alt="Logo" class="h-12 w-auto" />
+            </a>
+          </div>
+          <button id="close-menu" class="text-white hover:text-gray-400">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-col pt-16 items-center flex-grow space-y-6 px-5">
+          <a
+            href="#Home"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Home</a
+          >
+          <a
+            href="#Features"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Features</a
+          >
+          <a
+            href="#Planes"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Planes</a
+          >
+          <a
+            href="#Missions"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Missions</a
+          >
+          <a
+            href="#Enemy"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Enemies</a
+          >
+          <a
+            href="#Gallery"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Gallery</a
+          >
+          <a
+            href="./assets.html"
+            class="menu-link block text-gray-200 hover:text-hover-button hover:border-b-2 hover:border-hover-button-border text-center"
+            >Assets</a
+          >
+          <a
+            href="#"
+            class="menu-link block text-center border-4 border-white hover:bg-hover-button text-white font-bold py-3 px-5 rounded-lg hover:border-hover-button-border"
+          >
+            Download
+            <img
+              src="./images/icons-download.png"
+              alt="Download Icon"
+              class="ml-2 h-4 w-4 inline"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="bg-opacity-60 text-white">
+      <div class="md:max-w-[900px] lg:max-w-[1300px] mx-auto px-4 py-8">
+        <!-- Main Image Section -->
+        <div class="flex justify-center mb-8">
+          <img
+            src="./images/planes/rotate planes/1_6.gif"
+            alt="Main Image"
+            class="h-96 w-auto"
+          />
+        </div>
+
+        <!-- Main Title and Description -->
+        <div class="mb-16">
+          <h2 class="text-5xl py-6 text-center">Hunter</h2>
+        </div>
+
+        <!-- Colors Section -->
+        <div>
+          <!-- Second Layout Section -->
+          <div
+            class="max-w-full md:max-w-[1200px] lg:max-w-[1400px] mx-auto px-2"
+          >
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="md:w-2/5 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/1.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center rounded-xl bg-opacity-80 shadow-lg shadow-gray-600 border-4 border-gray-700 p-5"
+                />
+              </div>
+              <div class="md:w-1/3 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/2.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center rounded-xl bg-opacity-80 shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+              <div class="md:w-2/5 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/3.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Layout Section -->
+          <div
+            class="max-w-full md:max-w-[1200px] lg:max-w-[1400px] mx-auto px-2 py-4"
+          >
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="md:w-4/12 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/4.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+              <div class="md:w-4/12 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/10.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+              <div class="md:w-4/12 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/5.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth Layout Section -->
+          <div
+            class="max-w-full md:max-w-[1200px] lg:max-w-[1400px] mx-auto px-2"
+          >
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="md:w-1/4 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/9.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+              <div class="md:w-1/4 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/6.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+              <div class="md:w-1/4 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/7.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+              <div class="md:w-1/4 w-full">
+                <img
+                  src="./images/planes/Plane Angle Pics/Hunter/8.png"
+                  alt=""
+                  class="w-full md:h-56 h-auto object-center bg-opacity-80 rounded-xl shadow-lg shadow-gray-600 border-4 border-gray-800 p-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section Start -->
+    <footer class="w-full bg-gray-900">
+      <div
+        class="mx-auto md:max-w-[1200px] lg:max-w-[1400px] px-4 sm:px-6 lg:px-8"
+      >
+        <!--Grid-->
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-3 gap-y-8 md:gap-8 py-10 max-w-sm mx-auto sm:max-w-3xl lg:max-w-full"
+        >
+          <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
+            <a
+              href="https://pagedone.io/"
+              class="flex justify-center lg:justify-start"
+            >
+              <img src="./images/logo.svg" alt="" class="w-28" />
+            </a>
+            <p
+              class="py-8 text-sm text-gray-200 lg:max-w-xs text-center lg:text-left max-w-[600px]"
+            >
+              Gear up for high-speed air combat in WingRush! Pilot powerful
+              planes, destroy deadly monsters pouring from the mountains, and
+              defend the city from total destruction. Only your skill
+              can turn the tide!
+            </p>
+          </div>
+          <!--End Col-->
+          <div class="lg:mx-auto text-left">
+            <h4 class="text-lg text-white font-medium mb-7">Support</h4>
+            <ul class="text-sm transition-all duration-500">
+              <li class="mb-3">
+                <a
+                  href="#Home"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#Features"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Features</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#Planes"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Planes</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#Missions"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Missions</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#Enemy"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Enemies</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#Gallery"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Gallery</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="./assets.html"
+                  class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+                  >Assets</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!--End Col-->
+          <div class="lg:mx-auto text-left">
+            <h4 class="text-lg text-white font-medium mb-7">Follow Us:</h4>
+
+            <div class="flex mt-4 mb-7 space-x-4 sm:justify-center lg:mt-0">
+              <a
+                href="https://www.facebook.com/igniPulse/"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-[#5B51D8] flex justify-center items-center hover:text-button"
+              >
+                <img
+                  src="./images/social icon/icons8-facebook-f.svg"
+                  alt=""
+                  class="w-[1.75rem] h-[1.125rem] text-white"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/ignipulse"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-[#E1306C] flex justify-center items-center hover:text-button"
+              >
+                <img
+                  src="./images/social icon/icons8-instagram-100.png"
+                  alt=""
+                  class="w-[1.25rem] h-[1.25rem] text-white"
+                />
+              </a>
+
+              <a
+                href="https://www.youtube.com/channel/UCOI2_8463WfbJJKSBd4RI8g"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-[#FD1D1D] flex justify-center items-center hover:text-button"
+              >
+                <img
+                  src="./images/social icon/icons8-youtube-100.png"
+                  alt=""
+                  class="w-[1.25rem] h-[1.25rem] text-white"
+                />
+              </a>
+            </div>
+
+            <a
+              href="./Privacy-Policy.html"
+              class="text-gray-200 hover:text-button hover:border-b-2 hover:border-hover-button-border"
+              >Privacy and Policy</a
+            >
+          </div>
+        </div>
+        <!--Grid-->
+        <div class="py-7 border-t border-gray-200">
+          <div
+            class="flex items-center justify-center flex-col lg:justify-center lg:flex-row"
+          >
+            <span class="text-sm text-gray-200"
+              >©<a href="https://ignipulse.com/" target="_blank">igniPulse</a>
+              2025, All rights reserved.</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Secton End -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../script/custom.js"></script>
+  </body>
+</html>

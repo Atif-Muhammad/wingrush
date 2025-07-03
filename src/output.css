@@ -664,9 +664,15 @@ video {
 .z-10 {
   z-index: 10;
 }
+.z-30 {
+  z-index: 30;
+}
 
 .z-50 {
   z-index: 50;
+}
+.z-auto {
+  z-index: auto;
 }
 
 .col-span-full {
@@ -792,6 +798,10 @@ video {
 
 .h-12 {
   height: 3rem;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .h-36 {
@@ -1231,6 +1241,9 @@ video {
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
+.bg-opacity-90 {
+  --tw-bg-opacity: 0.9;
+}
 
 .bg-\[url\(\.\/\.\/images\/hero-section\.jpg\)\] {
   background-image: url(././images/hero-section.jpg);
@@ -1385,6 +1398,14 @@ video {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-50 {
+  padding-top: 50%;
 }
 
 .text-left {
